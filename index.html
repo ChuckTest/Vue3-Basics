@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Vue 3 Basics
-        </title>
-    </head>
-    <body>
-        <div>
-            Hello Vue 3
-        </div>
-    </body>
+
+<head>
+    <title>
+        Vue 3 Basics
+    </title>
+</head>
+
+<body>
+    <div id="app">
+        Hello Vue 3
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        let app = Vue.createApp({
+            data: function () {
+                return {
+                    greeting: 'Hello Vue 3'
+                }
+            }
+        });
+        app.mount('#app');
+    </script>
+</body>
+
 </html>
